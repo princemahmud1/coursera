@@ -6,3 +6,31 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.carousel-img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+/*-------------------------- Responsive Style ---------------------------*/
+@media screen and (max-width: 768px) {
+    .carousel-text h1 {
+        font-size: 18px;
+    }
+
+    .carousel-text p {
+        font-size: 10px;
+    }
+
+    .carousel-text .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
